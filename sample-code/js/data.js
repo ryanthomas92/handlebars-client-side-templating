@@ -3,127 +3,121 @@ var data = {
   city: "San Francisco",
   course: "Web Development Immersive",
   course_abbreviation: "WDI",
-  cohort: 31,
-  room: 4,
-  github_schedule: "https://github.com/sf-wdi-31/schedule",
+  cohort: 33,
+  room: 3,
+  github_schedule: "https://github.com/sf-wdi-33/schedule-33",
   developers:[
     {
-      first_name: 'Sam',
-      last_name: 'Darbonne',
-      github_username: 'samdarbonne',
-      height: 6,
-      status: {
-        loser: false,
-        married: false
-      }
+      first_name: 'Casey',
+      last_name: 'Oneal',
+      github_username: 'caseyjoneal'
     },
     {
-      first_name: "Alicia",
-      last_name: "Brown",
-      github_username: "cabrown91"
+      first_name: "Daniel",
+      last_name: "Kingdon",
+      github_username: "dkingdon"
     },
     {
-      last_name: "Misha",
-      first_name: "LeClair",
-      github_username: "sfnewzgirl"
+      last_name: "Finelli",
+      first_name: "Daniel",
+      github_username: "danfinelli1"
     },
     {
-      last_name: "Bak",
-      first_name: "Sera",
-      github_username: "serabakpak"
+      last_name: "Nixon",
+      first_name: "Derry",
+      github_username: "nixondc93"
     },
     {
-      first_name: "Abbas",
-      last_name: "Baig",
-      github_username: "abbasbaigali"
+      first_name: "Emily",
+      last_name: "Johnson",
+      github_username: "ladydangerdame"
     },
     {
-      first_name: "Andrew",
-      last_name: "Cordivari",
-      github_username: "andrewdc92"
+      first_name: "Emannuel",
+      last_name: "Kanu",
+      github_username: "Anichek25"
     },
     {
-      first_name: "Scott",
-      last_name: "Whitman",
-      github_username: "scottwwhitman"
+      first_name: "Jonathan",
+      last_name: "Hall",
+      github_username: "jhall0310"
     },
     {
-      first_name: "Laura",
+      first_name: "Katie",
+      last_name: "Dodd",
+      github_username: "Ktdodd511"
+    },
+    {
+      first_name: "Kevin",
+      last_name: "Tran",
+      github_username: "theycallmekevo"
+    },
+    {
+      first_name: "Kyle",
       last_name: "Russell",
-      github_username: "laurakathleen"
+      github_username: "zZissou"
     },
     {
-      first_name: "William",
-      last_name: "Namen",
-      github_username: "wnamen"
+      first_name: "Margaret",
+      last_name: "Ha",
+      github_username: "margarh1"
     },
     {
-      first_name: "Nicolas",
-      last_name: "Budig",
-      github_username: "14budig"
-    },
-    {
-      first_name: "Wolf",
-      last_name: "Reese",
-      github_username: "denzalereese"
-    },
-    {
-    first_name: "Jason",
-      last_name: "Kim",
-      github_username: "jckkim"
+    first_name: "Martin",
+      last_name: "Uriarte",
+      github_username: "TheMartinUriarte"
     }, 
     {
-      first_name: "Michael",
-      last_name: "Rogachevsky",
-      github_username: "mrogach2350"
+      first_name: "Sol",
+      last_name: "Beniquez",
+      github_username: "Sol1323"
     },
     {
-      first_name: "Lisa",
-      last_name: "Olson",
-      github_username: "lisaolson"
+      first_name: "Star",
+      last_name: "Kim",
+      github_username: "myungok-star"
     },
     {
-      last_name: "Carter",
-      first_name: "Sherie",
-      github_username: "sheriecarter"
+      last_name: "Dangerfield",
+      first_name: "Stephen",
+      github_username: "dangerstephen"
     },
     {
-      last_name: "Fong",
-      first_name: "Zachary",
-      github_username: "zjfong"
+      last_name: "Chae",
+      first_name: "Virginia",
+      github_username: "virginiachae"
     },
     {
-      last_name: "Vernon",
-      first_name: "Ashley",
-      github_username: "ashleyvernon"
+      last_name: "Kuliani",
+      first_name: "Vlad",
+      github_username: "vladyslavkuliani"
     },
     {
-      last_name: "Vinocur",
-      first_name: "Andrew",
-      github_username: "giants415"
-    }
-  
+      last_name: "Luo",
+      first_name: "Sophie",
+      github_username: "sopieluo"
+    },
+    {
+      last_name: "Diane",
+      first_name: "Liu",
+      github_username: "cittaliu"
+    },
+    {
+      last_name: "Sakamoto",
+      first_name: "Yasu",
+      github_username: "yasuper8"
+    } 
   ],
   instructional_team: [
     {
-      last_name: "Fauver",
-      first_name: "Cory",
-      github_username: "cofauver"
+      last_name: "Castilla",
+      first_name: "Justin",
+      github_username: "justincastilla"
     },
     {
-      last_name: "Tsangaris",
-      first_name: "Ilias",
-      github_username: "iliastsangaris"
-    },
-    {
-      last_name: "Veenstra",
-      first_name: "Brianna",
-      github_username: "bgveenstra"
-    },
-    {
-      last_name: "Laguardia",
-      first_name: "Matt",
-      github_username: "mattlaguardia"
+      last_name: "Weatherwax",
+      first_name: "Jean",
+      github_username: "jeanmw"
     }
   ]
 };
