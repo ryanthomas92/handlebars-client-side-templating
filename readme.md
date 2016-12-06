@@ -33,7 +33,7 @@ Templating will be a less error-prone, more efficient way to structure elements 
 
 Technical interviews for web developer positions often require coding in front of an interviewer. Phone interviews use a variety of online tools to allow the interviewer and candidate to both see the code at once.
 
-We've set up a [WDI 31 coderpad.io](https://coderpad.io/DMH49DFX) session to gather data about this cohort!  Follow that link and enter your name to join the coderpad.io session. Modify the data object to include your developer information. Once you have your first name, last name, and github username, feel free to add other information to your object. You can also add information about the class, but please don't delete the starter information.
+We've set up a [WDI 34 coderpad.io](https://coderpad.io/ZGED32NA) session to gather data about this cohort!  Follow that link and enter your name to join the coderpad.io session. Modify the data object to include your developer information. Once you have your first name, last name, and github username, feel free to add other information to your object. You can also add information about the class, but please don't delete the starter information.
 
 
 
