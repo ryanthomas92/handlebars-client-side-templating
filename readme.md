@@ -85,7 +85,7 @@ Think of a **template** function as a *mold*. Handlebars creates it for us from 
 
 ### Explore Handlebars
 
-We'll use the [sample-code](./sample-code) as our starting point.
+We'll use the [sample-code-jsForEach](./sample-code-jsForEach) as our starting point.
 
 ### What is happening in `index.html`?
 
@@ -147,11 +147,9 @@ We'll use the [sample-code](./sample-code) as our starting point.
   ```html
   <!-- handlebars template for inside of developers list -->
   <script id="developer-li-template" type="text/x-handlebars-template">
-    {{#each developers}}
-      <li class="list-group-item">
-        <a href="https://www.github.com/{{github_username}}" target="_blank"><strong>{{first_name}} {{last_name}}</strong></a>
-      </li>
-    {{/each}}
+    <li class="list-group-item">
+      <a href="https://www.github.com/{{github_username}}" target="_blank"><strong>{{first_name}} {{last_name}}</strong></a>
+    </li>
   </script>
   ```
   > The template can be anywhere in your HTML that a `<script>` tag can go, including in the location templated elements will take on the page.
@@ -171,9 +169,22 @@ We'll use the [sample-code](./sample-code) as our starting point.
 
 7) Using `#each` in the template is special Handlebars-specific syntax.  What do you think it means?
 
+<details><summary>here's what that would look like</summary>
+```html
+<!-- handlebars template for inside of developers list -->
+<script id="developer-li-template" type="text/x-handlebars-template">
+  {{#each developers}}
+    <li class="list-group-item">
+      <a href="https://www.github.com/{{github_username}}" target="_blank"><strong>{{first_name}} {{last_name}}</strong></a>
+    </li>
+  {{/each}}
+</script>
+```
+</details>
+
 <details><summary>answer</summary>The `#each` lets Handlebars know we'll want to repeat the structure inside the `#each` for every element of the array.</details>
 
-If we didn't use an `#each` in the template, what kind of structure would we add in the JavaScript to repeat the list item for each result developer?
+If we don't use an `#each` in the template, what kind of structure can we add in the JavaScript to repeat the list item for each result developer?
 
 <details>
   <summary>answer</summary>
@@ -203,10 +214,10 @@ If we didn't use an `#each` in the template, what kind of structure would we add
 
 **Pour the plastic into the mold**
 
-3) The template needs to know the actual data in order to fill it in.  Call the `template` function on an object. Keys are the variables used in the "blanks" and the value of each key is some value from the JavaScript.
+3) The template needs to know the actual data in order to fill it in.  Call the `template` function on an object. Keys are the variables used in the "blanks", and the value of each key is some value from the JavaScript.
 
   ```js
-  var developerHtml = template({ developers: data.developers });
+  var developerHtml = template({ first_name: data.developers[0].first_name, last_name: data.developers[0].last_name, github_username: data.developers[0].github_username });
   ```
 
   >If you're getting data from an AJAX call, you'll want to do this *after* the call is successful.
@@ -227,10 +238,15 @@ If we didn't use an `#each` in the template, what kind of structure would we add
   $("#developers-list").append(developerHtml);
   ```
 
+### Check for Understanding
+
+1. So far, we've only seen one developer's information. How could you change the code so that every developer's information would get put on the page?
+
+1. When you have an idea (or if you're stuck trying to come up with one), compare your thinking to the sample code with `forEach` and/or the sample code that uses Handlebars's `each`.
 
 ### Independent Practice
 
-Replace the header of `sample-code/index.html` with a template that reads from the cohort's `data` object.
+1. Replace the header content of `sample-code-jsForEach/index.html` with a template. Instead of having the cohort number, classroom, and github link hard-coded into the HTML, it should use templating and those from the cohort's `data` object.
 
 Follow the steps above carefully!
 
@@ -238,7 +254,7 @@ Follow the steps above carefully!
 ### Closing Thoughts
 
 * HTML templating lets us create "molds", "mad libs", or "cake pans" in our HTML that we can fill in with data later.
-* Client-side templating can cut down on the number of page refreshes requried to update the data displayed as a page changes. We'll see this more strongly later. 
+* Client-side templating can cut down on the number of page refreshes requried to update the data displayed as a page changes. We'll see this more strongly later.
 * Handlebars is a library that provides client-side templating. Using it has 4 steps: write source with "blanks"; compile source into template function; combine data with template to get HTML string; add HTML string to the DOM.
 
 ### Additional Resources
