@@ -25,20 +25,22 @@
       <div class="row">
         <div class="col-md-8 col-md-offset-2">
           <header>
-            <h1>WDI 34 Rocks!</h1>
+            <script id="header-template" type="text/x-handlebars-template">
+            <h1>WDI {{cohortNumber}} Rocks!</h1>
             <div class="where row">
               <div class="col-md-6">
-                <p>offline: room 7</p>
+                <p>room {{roomNumber}}</p>
               </div>
               <div class="col-md-6">
-                <p>online: <a href="https://github.com/sf-wdi-34/schedule" target="_blank">github</a></p>
+                <p>online: <a href="{{scheduleUrl}}" target="_blank"></a></p>
               </div>
             </div>
+          </script>
           </header>
 
           <h2>Developers</h2>
           <ul id="developers-list" class="list-group">
-            <!-- sample structure for a list item -->
+
             <!-- <li class="list-group-item">
               <a href="https://www.github.com/bobloblaw" target="_blank"><strong>Bob Loblaw</strong></a>
             </li> -->
@@ -46,7 +48,7 @@
             <script id="developer-li-template" type="text/x-handlebars-template">
 
                 <li class="list-group-item">
-                  <a href="https://www.github.com/{{dev.github_username}}" target="_blank"><strong>{{dev.first_name}} {{dev.last_name}}</strong></a>
+                  <a href="https://www.github.com/{{github_username}}" target="_blank"><strong>{{first_name}} {{last_name}}</strong></a>
                 </li>
 
             </script>
